@@ -1,8 +1,6 @@
 import random
 
 
-
-
 class Borracho:
     
     def __init__(self, nombre):
