@@ -1,0 +1,17 @@
+[flake8]
+ignore =
+    E1, # Indentation checking
+    E2, # Whitespace checking
+    E3, # Blank line checking
+    E5, # Line length checking
+    W1, # Indentation warnings
+    W2, # Whitespace warnings
+    W3, # Blank line warnings
+    W5  # Line break warnings
+
+exclude =
+    .git,
+    .tox,
+    __pycache__
+
+application-import-names = app
