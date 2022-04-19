@@ -58,3 +58,39 @@ console.log(education);
 console.log(glogalVar);
 
 const a = "b";
+
+// Improvement objects
+let name = "nicolas";
+let age = 25;
+
+obj = { name: name, age: age };
+
+obj2 = { name, age };
+console.log(obj2);
+
+// Arrow functions
+const names = [
+  { name: "nicolas", age: "32" },
+  { name: "andres", age: 25 },
+];
+
+let listOfNames = names.map(function (item) {
+  console.log(item.name);
+});
+
+let listOfNames2 = names.map((item) => console.log(item.name));
+
+// Promises
+const helloPromise = () => {
+  return new Promise((resolve, reject) => {
+    if (true) {
+      resolve("hey");
+    } else {
+      reject("Upss");
+    }
+  });
+};
+
+helloPromise()
+  .then((response) => console.log(response))
+  .catch((error) => console.log(error));
