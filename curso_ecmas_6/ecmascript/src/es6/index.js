@@ -60,12 +60,12 @@ console.log(glogalVar);
 const a = "b";
 
 // Improvement objects
-let name = "nicolas";
-let age = 25;
+let name2 = "nicolas";
+let age2 = 25;
 
-obj = { name: name, age: age };
+obj = { name: name2, age: age2 };
 
-obj2 = { name, age };
+obj2 = { name2, age2 };
 console.log(obj2);
 
 // Arrow functions
@@ -94,3 +94,40 @@ const helloPromise = () => {
 helloPromise()
   .then((response) => console.log(response))
   .catch((error) => console.log(error));
+
+// Classes
+class calculator {
+  constructor() {
+    this.valueA = 0;
+    this.valueB = 0;
+  }
+
+  sum(valueA, valueB) {
+    this.valueA = valueA;
+    this.valueB = valueB;
+    return this.valueA + this.valueB;
+  }
+}
+
+const calc = new calculator();
+console.log(calc.sum(1, 2));
+
+// Import modules
+import { hello } from "./module";
+
+hello();
+
+// Generators
+
+function* helloWorld() {
+  if (true) {
+    yield "Hello, ";
+  }
+  if (true) {
+    yield "world";
+  }
+}
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
