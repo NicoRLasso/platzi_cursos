@@ -1,0 +1,20 @@
+{
+  "name": "course_javascript_asynchronous",
+  "version": "1.0.0",
+  "description": "Work with asynchronous and JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js",
+    "challenge": "node src/callback/challenge.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
