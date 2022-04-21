@@ -12,5 +12,7 @@ For the javascript courses you must have installed node
 
 When you have allready have installed node go to the course_javascript_asynchronous folder and run
 `npm install`
-For index.js examples run `npm run callbacks`
-For Challenge.js examples run `npm run callbacks`
+For callback/index.js examples run `npm run callbacks`
+For callback/Challenge.js examples run `npm run callbacks`
+For promise/index.js examples run `npm run promise`
+For promise/Challenge.js examples run `npm run promise:challenge`
