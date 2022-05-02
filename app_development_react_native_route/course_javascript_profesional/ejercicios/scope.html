@@ -1,0 +1,61 @@
+<!-- saved from url=(0094)https://static.platzi.com/media/public/uploads/scope_827d6067-329a-4a35-a2e5-4f6cb25771fd.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Scope</title>
+    <script async="" src="./Scope_files/api.js"></script>
+  </head>
+
+  <body>
+    <a href="/ejercicios/index.html">Go back</a>
+    <p><em>Abre la consola</em></p>
+
+    <script src="./Scope_files/jquery.js"></script>
+
+    <script>
+      // Global Scope
+      // var message = 'Hello, Platzi!';
+      // var $ = function(message) {
+      //   console.log('Say: ' + message);
+      // };
+
+      // Function Scope
+      // function printNumbers() {
+      //   var i;
+      //   for (i = 0; i < 10; i++) {
+      //     function eventuallyPrintNumber(n) {
+      //       setTimeout(function() {
+      //         console.log(n);
+      //       }, 100);
+      //     }
+
+      //     eventuallyPrintNumber(i);
+      //   }
+      // }
+
+      // printNumbers();
+
+      // Block Scope
+      function printNumbers2() {
+        for (let i = 0; i < 10; i++) {
+          setTimeout(function () {
+            console.log(i);
+          }, 100);
+        }
+      }
+
+      printNumbers2();
+
+      // Module Scope
+    </script>
+    <script type="text/javascript">
+      (function () {
+        window["__CF$cv$params"] = {
+          r: "702b36cd0f7b6da4",
+          m: "cIBZB2ETq9rucIoBJS7WdtUFBTHI_yoDQ7lwC6uzBzY-1651100843-0-Ab4JT7Ol9DSOwFJZLxoCwjQu94u6EHt8vQ+ZCCuZwxhXGdudgy+qV7jcc074A7p/bkGUQkL1lNzIOWx24LYpi5mLAt6DIAbj2r6ba7GUVfAwP5poHsJNoEa3LRKnCofewM+LcjWCacsxOmUQ8kDwiiy0QgJLwenZMXLn9LvV6TqvQ8qsG6P+YaojdlkM6Hz5YZgiXhYuuARus/3ZcLkzVL8=",
+          s: [0x5f29ca7cab, 0x22f50f3d3b],
+        };
+      })();
+    </script>
+  </body>
+</html>
